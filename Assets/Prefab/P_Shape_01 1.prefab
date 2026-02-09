@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 604516968716269146}
   - component: {fileID: 7769090932196488866}
   - component: {fileID: 976658244514362644}
-  - component: {fileID: 4529560315089688839}
+  - component: {fileID: 6331996123143360456}
   m_Layer: 0
-  m_Name: P_Shape_01
+  m_Name: P_Shape_01 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: 7358e191-33b7-43ca-b066-b2f00531ac66
-  instanceId: 16da1db2-b806-4533-b5ad-8141fcadca5f
+  instanceId: c53248d5-4209-4747-a54e-f8c845c2169c
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -162,9 +162,9 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496123339959280488}
-  m_Mesh: {fileID: -2432090755550338912, guid: 4031e9dba7a3af94b832eda006267a2c, type: 3}
---- !u!64 &4529560315089688839
-MeshCollider:
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!135 &6331996123143360456
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -181,10 +181,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: -1
-  m_Mesh: {fileID: -2432090755550338912, guid: 4031e9dba7a3af94b832eda006267a2c, type: 3}
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5500800652797140858
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,7 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: f8766c17-aaf8-4b55-9431-de8deea83842
-  instanceId: e1635c46-b4db-45cc-b1d9-24a51f704a89
+  instanceId: fd2d507f-dae6-4d3b-9a4a-0f4fc1a007e4
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: f8338144-8280-4ff6-9455-ae2bb9c20fe8
