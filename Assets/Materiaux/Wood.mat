@@ -51,10 +51,10 @@ Material:
     m_Ints: []
     m_Floats:
     - _AO: 1
-    - _NormalStrength: 1
+    - _NormalStrength: 0.36
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RoughnessStrenght: 2.09
+    - _RoughnessStrenght: 2.1
     - _XRMotionVectorsPass: 1
     m_Colors:
     - _Color1: {r: 0, g: 0, b: 0, a: 1}

@@ -2,15 +2,24 @@ using UnityEngine;
 
 public class SpawningMarble : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    public GameObject marblePrefab;
+    float yet;
+    public float interval = 1.0f;
 
-    // Update is called once per frame
     void Update()
     {
-        
+        yet += Time.deltaTime;
+
+        if (yet >= interval)
+        {
+            yet -= interval;
+
+            spawnMarble();
+        }
+    }
+
+    void spawnMarble()
+    {
+        Instantiate(marblePrefab, transform.position, Quaternion.identity);
     }
 }
