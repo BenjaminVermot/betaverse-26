@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: 3f1827c2-c682-46d8-999e-0954e37e833e
-  instanceId: 6d4ef317-baec-470b-a224-19a00f1db99b
+  instanceId: 809b4c4d-b296-4962-a58e-6b0df29ca944
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 20b9ad69-c205-488d-a6b2-d3d7ca6c1e53
@@ -201,7 +201,7 @@ GameObject:
   - component: {fileID: 3927408205670058703}
   - component: {fileID: 7795400279777039334}
   m_Layer: 0
-  m_Name: BuildingBlock1
+  m_Name: BuildingBlock2
   m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -236,7 +236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: 7358e191-33b7-43ca-b066-b2f00531ac66
-  instanceId: b044c82c-3fa6-49b2-b776-54c9c8bcb201
+  instanceId: e3a263c3-4ccf-4b85-b15a-a854459881a1
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -248,7 +248,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4783535628933246746}
-  m_Mesh: {fileID: -7192308373975347522, guid: e739045b17a1d4165aaa7e452f188bc0, type: 3}
+  m_Mesh: {fileID: -2228417370725966487, guid: 87ddeb4548098344dad9d815d96491c3, type: 3}
 --- !u!23 &383906135126245300
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -319,7 +319,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: -7192308373975347522, guid: e739045b17a1d4165aaa7e452f188bc0, type: 3}
+  m_Mesh: {fileID: -2228417370725966487, guid: 87ddeb4548098344dad9d815d96491c3, type: 3}
 --- !u!54 &3927408205670058703
 Rigidbody:
   m_ObjectHideFlags: 0
