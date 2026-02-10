@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
@@ -9,7 +8,7 @@ public class MarbleScript : MonoBehaviour
     private SphereCollider TargetSpotCollider;
     private BoxCollider[] CheckPointColliders;
 
-    private ParticleSystem confettis;
+    public ParticleSystem confettis;
     public MarbleState CurrentState { get; private set; }
     void Start()
     {
@@ -20,8 +19,6 @@ public class MarbleScript : MonoBehaviour
             CheckPointColliders[i] = GameObject.Find("CheckPointCollider" + (i + 1)).GetComponent<BoxCollider>();
         }
         CurrentState = MarbleState.Checkpoint1;
-
-        confettis = GameObject.Find("Confettis").GetComponent<ParticleSystem>();
     }
 
 
@@ -53,6 +50,11 @@ public class MarbleScript : MonoBehaviour
             CheckForWin();
             return;
         }
+
+        if (other.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     void CheckForWin()
@@ -66,6 +68,7 @@ public class MarbleScript : MonoBehaviour
 
     void spawnConfettis()
     {
-        confettis.Play();
+        if (confettis == null) return;
+        Instantiate(confettis, transform.position, Quaternion.identity);
     }
 }
