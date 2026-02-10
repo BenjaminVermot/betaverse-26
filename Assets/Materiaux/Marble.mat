@@ -38,7 +38,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Tex:
-        m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
+        m_Texture: {fileID: 2800000, guid: eb5f6d0fe63f340e394eac91cc5ec0ed, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -55,14 +55,17 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _FresnelPower: 5.48
+    - _FresnelPower: 5.79
+    - _NormalStrength: 0.00013
     - _QueueControl: 0
     - _QueueOffset: 0
     - _XRMotionVectorsPass: 1
     m_Colors:
-    - _Color1: {r: 1, g: 0.7010197, b: 0.26729542, a: 1}
-    - _Color2: {r: 1, g: 0.5377357, b: 0.60096747, a: 1}
+    - _Color1: {r: 1, g: 0.78790665, b: 0.61320746, a: 1}
+    - _Color2: {r: 1, g: 0.59229773, b: 0.53333336, a: 1}
     - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Tilling: {r: 15.25, g: 6.48, b: 0, a: 0}
+    - _NormalTilling: {r: 9.9, g: 3.48, b: 0, a: 0}
+    - _RoughnessTilling: {r: 23.11, g: 11.5, b: 0, a: 0}
+    - _Tilling: {r: 13.35, g: 0, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
