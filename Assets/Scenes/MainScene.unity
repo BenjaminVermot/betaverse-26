@@ -933,7 +933,7 @@ MonoBehaviour:
   BarycentricCoordinatesEnabled: 1
   Colliders: 0
   CutHoles: 0
-  castShadows: 1
+  castShadows: 0
   hideMesh: 0
   Layer: 0
   textureCoordinateModes:
