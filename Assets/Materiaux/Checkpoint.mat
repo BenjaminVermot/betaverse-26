@@ -40,21 +40,22 @@ Material:
     m_Floats:
     - _BorderWeight: 0.144
     - _CircleSize: 0.781
-    - _DetailsDensity: 1.23
-    - _DetailsSpeed: 4.62
-    - _DistortionScale: -0.66
+    - _DetailsDensity: 0.21
+    - _DetailsSpeed: 8.1
+    - _DetailsWeight: 0.09
+    - _DistortionScale: 11.52
     - _DistortionSpeed: 2
     - _DistortionTiling: 6.84
-    - _FillStrength: 0.533
+    - _FillStrength: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _RadialScale: 0.62
+    - _RadialScale: 24.56
     - _XRMotionVectorsPass: 1
     m_Colors:
     - _BorderColor: {r: 0.43081754, g: 0.7651075, b: 1, a: 1}
-    - _DetailsColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DetailsColor: {r: 1, g: 0.36618012, b: 0, a: 1}
     - _DisrtotionSpeed: {r: 0.12, g: 0, b: 0, a: 0}
-    - _FillColor: {r: 0.7372549, g: 1, b: 0.8879156, a: 1}
+    - _FillColor: {r: 0.7877358, g: 1, b: 0.9796966, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &8818729958580827411
