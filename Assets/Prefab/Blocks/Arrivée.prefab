@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 1214742024207104813}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 10, z: 10}
+  m_LocalPosition: {x: 0.000000029802, y: -0.065272, z: 0}
+  m_LocalScale: {x: 22.314999, y: 22.314999, z: 22.314999}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5327295188286393083}
@@ -139,8 +139,8 @@ Transform:
   m_GameObject: {fileID: 3426789156571875610}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.053, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.03496165, z: 0.5}
+  m_LocalPosition: {x: 0.000000029802, y: 0.053, z: 0}
+  m_LocalScale: {x: 1.11575, y: 0.078016914, z: 1.11575}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5327295188286393083}
@@ -176,7 +176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5327295188286393083}
   m_Layer: 0
-  m_Name: "Arrive\u0301e"
+  m_Name: "Arriv\xE9e"
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
