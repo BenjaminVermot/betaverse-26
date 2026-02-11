@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject checkPointSpawnerPrefab;
     public GameObject dispenserSpawnerPrefab;
+    public GameObject arriveeSpawnerPrefab;
 
     public Material[] checkpointMaterials; // Array pour stocker les matériaux des checkpoints
 
@@ -75,6 +76,7 @@ public class GameManager : MonoBehaviour
         {
             Instantiate(checkPointSpawnerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
             Instantiate(dispenserSpawnerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+            Instantiate(arriveeSpawnerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
 
         }
 
@@ -82,6 +84,7 @@ public class GameManager : MonoBehaviour
         {
             Instantiate(checkPointSpawnerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
             Instantiate(dispenserSpawnerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+            Instantiate(arriveeSpawnerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
         }
 
 
