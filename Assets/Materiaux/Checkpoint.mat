@@ -53,7 +53,7 @@ Material:
     - _DistortionTiling: 3.37
     - _FillStrength: 1
     - _Float: 3.34
-    - _NumberAlpha: 0.212
+    - _NumberAlpha: 0.2
     - _NumberSize: 1
     - _QueueControl: 0
     - _QueueOffset: 0
@@ -62,7 +62,7 @@ Material:
     m_Colors:
     - _BorderColor: {r: 1, g: 1, b: 1, a: 1}
     - _DetailsColor: {r: 1, g: 1, b: 1, a: 1}
-    - _DisrtotionSpeed: {r: 0.001, g: 0, b: 0, a: 0}
+    - _DisrtotionSpeed: {r: 0.02, g: 0, b: 0, a: 0}
     - _FillColor: {r: 0.56289303, g: 1, b: 0.9595272, a: 1}
     - _NumberColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

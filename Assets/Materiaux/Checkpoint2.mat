@@ -25,7 +25,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _NumberTex:
-        m_Texture: {fileID: 2800000, guid: ae479d9417b73e240ad2551e1fb569e2, type: 3}
+        m_Texture: {fileID: 2800000, guid: d3f3cdc0b769b48f6aec764f1299145d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -44,26 +44,26 @@ Material:
     m_Floats:
     - _BorderWeight: 0.147
     - _CircleSize: 0.745
-    - _DetailsAlphaWeight: 0.25
+    - _DetailsAlphaWeight: 1.16
     - _DetailsDensity: 5.34
     - _DetailsSpeed: -0.1
-    - _DetailsWeight: 0.126
+    - _DetailsWeight: 0.13
     - _DistortionScale: 2.32
     - _DistortionSpeed: 2
     - _DistortionTiling: 3.37
-    - _FillStrength: 0.564
+    - _FillStrength: 1
     - _Float: 3.34
-    - _NumberAlpha: 0.194
+    - _NumberAlpha: 0.2
     - _NumberSize: 1
     - _QueueControl: 0
     - _QueueOffset: 0
     - _RadialScale: -1.96
     - _XRMotionVectorsPass: 1
     m_Colors:
-    - _BorderColor: {r: 1, g: 0, b: 0, a: 1}
+    - _BorderColor: {r: 1, g: 1, b: 1, a: 1}
     - _DetailsColor: {r: 1, g: 1, b: 1, a: 1}
-    - _DisrtotionSpeed: {r: 0.001, g: 0, b: 0, a: 0}
-    - _FillColor: {r: 1, g: 0.5647059, b: 0.5809188, a: 1}
+    - _DisrtotionSpeed: {r: 0.02, g: 0, b: 0, a: 0}
+    - _FillColor: {r: 0.56289303, g: 1, b: 0.9595272, a: 1}
     - _NumberColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

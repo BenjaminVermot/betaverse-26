@@ -104,8 +104,8 @@ public class GameManager : MonoBehaviour
         for (int i = 0; i < currentLevelCheckpoints.Length; i++)
         {
             // 1. On cherche l'enfant
-            Transform colliderTransform = currentLevelCheckpoints[i].transform.Find("CheckPointCollider");
-            UnityEngine.Debug.Log("Collider trouvé : " + colliderTransform.name);
+            Transform colliderTransform = currentLevelCheckpoints[i].transform.Find("Anneau/Plane/CheckPointCollider");
+            UnityEngine.Debug.Log("Collider trouvé : " + colliderTransform);
 
             // 2. On vérifie d'abord s'il existe !
             if (colliderTransform != null)
