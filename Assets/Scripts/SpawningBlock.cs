@@ -19,16 +19,16 @@ public class SpawningBlock : MonoBehaviour
 
     void Update()
     {
-        if (currentSpawnedObject != null && grow)
-        {
+        // if (currentSpawnedObject != null && grow)
+        // {
 
-            currentSpawnedObject.transform.localScale += Vector3.one * growSpeed * Time.deltaTime;
-        }
+        //     currentSpawnedObject.transform.localScale += Vector3.one * growSpeed * Time.deltaTime;
+        // }
 
-        if (currentSpawnedObject != null && currentSpawnedObject.transform.localScale.x >= 8f)
-        {
-            grow = false;
-        }
+        // if (currentSpawnedObject != null && currentSpawnedObject.transform.localScale.x >= 8f)
+        // {
+        //     grow = false;
+        // }
     }
 
     void OnTriggerExit(Collider other)
@@ -44,7 +44,7 @@ public class SpawningBlock : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         currentSpawnedObject = Instantiate(spawnPrefab, transform.position, Quaternion.Euler(spawnRotation));
-        currentSpawnedObject.transform.localScale = Vector3.zero;
-        grow = true;
+        currentSpawnedObject.transform.localScale = Vector3.one * 8;
+        // grow = true;
     }
 }
