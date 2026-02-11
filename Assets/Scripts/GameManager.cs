@@ -99,6 +99,11 @@ public class GameManager : MonoBehaviour
         setCheckpointsOrder();
     }
 
+    public void updateMarbleArray()
+    {
+        currentLevelMarbles = GameObject.FindGameObjectsWithTag("Marble");
+    }
+
     void setCheckpointsOrder()
     {
         for (int i = 0; i < currentLevelCheckpoints.Length; i++)
@@ -127,5 +132,11 @@ public class GameManager : MonoBehaviour
             }
 
         }
+    }
+
+    public void WinLevel()
+    {
+        UnityEngine.Debug.Log("Level " + currentLevel + " won!");
+        LoadNextLevel();
     }
 }

@@ -31,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 5864240721418652710}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 1.053, z: -0.308}
-  m_LocalScale: {x: 8, y: 8, z: 8}
+  m_LocalPosition: {x: 0.0000037695, y: 1.0498, z: -0.30797}
+  m_LocalScale: {x: 6.0908, y: 6.0908, z: 6.0908}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2168620763187593706}
@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: 7358e191-33b7-43ca-b066-b2f00531ac66
-  instanceId: 462ca80f-1bb4-4854-a562-b803e9a91027
+  instanceId: 1795c42c-92a0-47c5-84df-be6586b9f0a7
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: f8766c17-aaf8-4b55-9431-de8deea83842
-  instanceId: 4ab5bb53-dedb-443a-8d9f-ad04cc52f506
+  instanceId: 2963c755-4b1b-4486-a9c4-232e3ea8208b
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: f8338144-8280-4ff6-9455-ae2bb9c20fe8

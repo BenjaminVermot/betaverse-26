@@ -15,6 +15,7 @@ public class MarbleScript : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("GAME_MANAGER").GetComponent<GameManager>();
+        gameManager.updateMarbleArray();
 
         TargetSpotCollider = GameObject.Find("TargetSpot").GetComponent<SphereCollider>();
 
@@ -68,8 +69,7 @@ public class MarbleScript : MonoBehaviour
         if (CurrentState == MarbleState.Checkpoint3)
         {
             spawnConfettis();
-            StartCoroutine(WinCoroutine());
-            CurrentState = MarbleState.Win;
+            gameManager.WinLevel();
         }
     }
 
@@ -77,11 +77,5 @@ public class MarbleScript : MonoBehaviour
     {
         if (confettis == null) return;
         Instantiate(confettis, transform.position, Quaternion.identity);
-    }
-
-    public IEnumerator WinCoroutine()
-    {
-        yield return new WaitForSeconds(2f);
-        Destroy(gameObject);
     }
 }
