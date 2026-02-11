@@ -44,7 +44,6 @@ public class SpawningBlock : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         currentSpawnedObject = Instantiate(spawnPrefab, transform.position, Quaternion.Euler(spawnRotation));
-        currentSpawnedObject.transform.localScale = Vector3.one * 8;
         // grow = true;
     }
 }
