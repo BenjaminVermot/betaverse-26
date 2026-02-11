@@ -12,9 +12,11 @@ public class S_Trampoline : MonoBehaviour
             Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
             if (rb != null)
             {
-                rb.AddForce(transform.up * bounceForce, ForceMode.Impulse);
+                Debug.Log("jump" + collision.contacts[0].normal);
+
+                rb.AddForce(-collision.contacts[0].normal * bounceForce, ForceMode.Impulse);
             }
         }
     }
-   
+
 }
