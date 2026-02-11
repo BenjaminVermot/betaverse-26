@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Checkpoint
+  m_Name: Checkpoint2
   m_Shader: {fileID: -6465566751694194690, guid: ee98ececb12ffa944a4ce266cb65d037, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -44,16 +44,16 @@ Material:
     m_Floats:
     - _BorderWeight: 0.147
     - _CircleSize: 0.745
-    - _DetailsAlphaWeight: 1.16
+    - _DetailsAlphaWeight: 0.25
     - _DetailsDensity: 5.34
     - _DetailsSpeed: -0.1
-    - _DetailsWeight: 0.13
+    - _DetailsWeight: 0.126
     - _DistortionScale: 2.32
     - _DistortionSpeed: 2
     - _DistortionTiling: 3.37
-    - _FillStrength: 1
+    - _FillStrength: 0.564
     - _Float: 3.34
-    - _NumberAlpha: 0.212
+    - _NumberAlpha: 0.194
     - _NumberSize: 1
     - _QueueControl: 0
     - _QueueOffset: 0
