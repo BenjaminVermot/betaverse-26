@@ -30,7 +30,9 @@ TagManager:
   - QDSUITextInputField
   - SamplesInfoPanel
   - QDSUIToggleCheckboxRadio
-  - Marbel
+  - Marble
+  - Checkpoint
+  - Dispenser
   layers:
   - Default
   - TransparentFX
