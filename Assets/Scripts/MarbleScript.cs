@@ -1,9 +1,11 @@
-using System.Runtime.CompilerServices;
+using System.Collections; // <--- Ajoutez cette ligne !
+
 using UnityEngine;
 
 public class MarbleScript : MonoBehaviour
 {
     public enum MarbleState { Checkpoint1, Checkpoint2, Checkpoint3, Win }
+    public GameManager gameManager;
 
     private SphereCollider TargetSpotCollider;
     private BoxCollider[] CheckPointColliders;
@@ -12,9 +14,13 @@ public class MarbleScript : MonoBehaviour
     public MarbleState CurrentState { get; private set; }
     void Start()
     {
+        gameManager = GameObject.Find("GAME_MANAGER").GetComponent<GameManager>();
+
         TargetSpotCollider = GameObject.Find("TargetSpot").GetComponent<SphereCollider>();
-        CheckPointColliders = new BoxCollider[3];
-        for (int i = 0; i < 3; i++)
+
+        int checkpointLength = gameManager.currentLevelCheckpoints.Length;
+        CheckPointColliders = new BoxCollider[checkpointLength];
+        for (int i = 0; i < checkpointLength; i++)
         {
             CheckPointColliders[i] = GameObject.Find("CheckPointCollider" + (i + 1)).GetComponent<BoxCollider>();
         }
@@ -62,6 +68,7 @@ public class MarbleScript : MonoBehaviour
         if (CurrentState == MarbleState.Checkpoint3)
         {
             spawnConfettis();
+            StartCoroutine(WinCoroutine());
             CurrentState = MarbleState.Win;
         }
     }
@@ -70,5 +77,11 @@ public class MarbleScript : MonoBehaviour
     {
         if (confettis == null) return;
         Instantiate(confettis, transform.position, Quaternion.identity);
+    }
+
+    public IEnumerator WinCoroutine()
+    {
+        yield return new WaitForSeconds(2f);
+        Destroy(gameObject);
     }
 }
