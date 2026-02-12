@@ -5,6 +5,7 @@ public class SpawningBlock : MonoBehaviour
 {
     public GameObject spawnPrefab;
     public UnityEngine.Vector3 spawnRotation;
+    public UnityEngine.Vector3 spawnScale;
 
     private GameObject currentSpawnedObject;
 
@@ -44,6 +45,6 @@ public class SpawningBlock : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         currentSpawnedObject = Instantiate(spawnPrefab, transform.position, Quaternion.Euler(spawnRotation));
-        // grow = true;
+        currentSpawnedObject.transform.localScale = spawnScale;
     }
 }

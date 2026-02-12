@@ -2,10 +2,11 @@ using System.Collections;
 using System.Diagnostics;
 using System.Reflection;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class GameManager : MonoBehaviour
 {
-    public int currentLevel = 0;
+    public int currentLevel = -2;
     public GameObject[] currentLevelBlocks;
     public GameObject[] currentLevelMarbles;
     public GameObject[] currentLevelCheckpoints;
@@ -27,7 +28,10 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            LoadNextLevel();
+        }
     }
 
     void LoadNextLevel()
@@ -45,54 +49,37 @@ public class GameManager : MonoBehaviour
 
     void destroyCurrentLevel()
     {
-        foreach (GameObject block in currentLevelBlocks)
+        // On détruit les objets physiquement dans la scène
+        if (currentLevelCheckpoints != null)
         {
-            Destroy(block);
-            currentLevelBlocks = new GameObject[0];
+            foreach (GameObject checkpoint in currentLevelCheckpoints)
+            {
+                if (checkpoint != null) Destroy(checkpoint);
+            }
         }
 
-        foreach (GameObject marble in currentLevelMarbles)
-        {
-            Destroy(marble);
-            currentLevelMarbles = new GameObject[0];
-        }
-
-        foreach (GameObject checkpoint in currentLevelCheckpoints)
-        {
-            Destroy(checkpoint);
-            currentLevelCheckpoints = new GameObject[0];
-        }
-
-        foreach (GameObject dispenser in currentLevelDispensers)
-        {
-            Destroy(dispenser);
-            currentLevelDispensers = new GameObject[0];
-        }
+        // On vide les tableaux APRES la boucle
+        currentLevelCheckpoints = new GameObject[0];
+        currentLevelBlocks = new GameObject[0];
+        currentLevelMarbles = new GameObject[0];
+        currentLevelDispensers = new GameObject[0];
     }
 
     void spawnNextLevel()
     {
-        if (currentLevel == 1)
-        {
-            Instantiate(checkPointSpawnerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-            Instantiate(dispenserSpawnerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-            Instantiate(arriveeSpawnerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+        // On instancie tes spawners
+        Instantiate(checkPointSpawnerPrefab, Vector3.zero, Quaternion.identity);
+        Instantiate(dispenserSpawnerPrefab, Vector3.zero, Quaternion.identity);
+        Instantiate(arriveeSpawnerPrefab, Vector3.zero, Quaternion.identity);
 
-        }
-
-        if (currentLevel == 2)
-        {
-            Instantiate(checkPointSpawnerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-            Instantiate(dispenserSpawnerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-            Instantiate(arriveeSpawnerPrefab, new Vector3(0, 0, 0), Quaternion.identity);
-        }
-
-
+        // Note : Si tes spawners créent eux-mêmes des objets, 
+        // assure-toi qu'ils ont bien les bons TAGS ("Checkpoint", etc.)
     }
 
     IEnumerator updateArrays()
     {
-        yield return new WaitForSeconds(0.5f);
+        // On attend un peu que les objets soient bien instanciés par les spawners
+        yield return new WaitForSeconds(0.1f);
 
         currentLevelBlocks = GameObject.FindGameObjectsWithTag("Block");
         currentLevelMarbles = GameObject.FindGameObjectsWithTag("Marble");
@@ -133,7 +120,6 @@ public class GameManager : MonoBehaviour
                     planeRenderer.material = checkpointMaterials[i];
                 }
             }
-
         }
     }
 
@@ -142,4 +128,6 @@ public class GameManager : MonoBehaviour
         UnityEngine.Debug.Log("Level " + currentLevel + " won!");
         LoadNextLevel();
     }
+
+
 }

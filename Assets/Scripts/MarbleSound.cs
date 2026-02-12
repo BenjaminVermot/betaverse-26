@@ -70,7 +70,7 @@ public class MarbleSound : MonoBehaviour
         {
             if (currentVelocity > 2.6f)
             {
-                int randomIndex = Random.Range(0, woodImpactSounds.Length);
+                int randomIndex = Random.Range(0, billeImpactSounds.Length);
                 oneShotAudioSource.pitch = 1;
                 oneShotAudioSource.pitch += Random.Range(-0.1f, 0.1f);
                 oneShotAudioSource.PlayOneShot(billeImpactSounds[randomIndex]);
