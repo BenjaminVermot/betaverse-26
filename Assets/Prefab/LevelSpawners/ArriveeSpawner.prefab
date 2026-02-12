@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3317379097827904224}
   - component: {fileID: 790777055606547724}
   m_Layer: 0
-  m_Name: "Arriv\xE9eSpawner"
+  m_Name: ArriveeSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
   SpawnAmount: 1
   MaxIterations: 1000
   SpawnLocations: 3
-  Labels: 8
+  Labels: 1
   CheckOverlaps: 0
   OverrideBounds: -1
   LayerMask:
