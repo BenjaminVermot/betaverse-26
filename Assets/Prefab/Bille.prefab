@@ -189,6 +189,7 @@ MonoBehaviour:
   billeImpactSounds:
   - {fileID: 8300000, guid: 20a79d82e495c4cbf9be61d77c484682, type: 3}
   - {fileID: 8300000, guid: d20f2f796a6504910a2163d8eb8a62a6, type: 3}
+  winSound: {fileID: 8300000, guid: 9718ec0546421445bbbbf8524631e28f, type: 3}
   oneShotAudioSource: {fileID: 7773637831676176112}
   rollingAudioSource: {fileID: 4273596576096949162}
   currentVelocity: 0

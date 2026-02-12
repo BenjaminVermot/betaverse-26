@@ -15,9 +15,12 @@ public class MarbleScript : MonoBehaviour
     public int marbleType = 0;
 
     public Material[] materials;
+
+    private MarbleSound marbleSound;
     public MarbleState CurrentState { get; private set; }
     void Start()
     {
+        marbleSound = GetComponent<MarbleSound>();
         gameManager = GameObject.Find("GAME_MANAGER").GetComponent<GameManager>();
         gameManager.updateMarbleArray();
 
@@ -77,6 +80,7 @@ public class MarbleScript : MonoBehaviour
         {
             other.enabled = false;
             spawnConfettis();
+            marbleSound.PlaySound(marbleSound.winSound);
             gameManager.WinLevel();
         }
     }
