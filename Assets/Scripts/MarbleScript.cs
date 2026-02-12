@@ -1,5 +1,5 @@
 using System.Collections; // <--- Ajoutez cette ligne !
-
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class MarbleScript : MonoBehaviour
@@ -7,20 +7,21 @@ public class MarbleScript : MonoBehaviour
     public enum MarbleState { Checkpoint1, Checkpoint2, Checkpoint3, Win }
     public GameManager gameManager;
 
-    private SphereCollider TargetSpotCollider;
-    private BoxCollider[] CheckPointColliders;
+    public SphereCollider TargetSpotCollider;
+    public BoxCollider[] CheckPointColliders;
 
     public ParticleSystem confettis;
+
+    public int marbleType = 0;
 
     public Material[] materials;
     public MarbleState CurrentState { get; private set; }
     void Start()
     {
-        gameObject.GetComponent<MeshRenderer>().material = materials[Random.Range(0, materials.Length)];
         gameManager = GameObject.Find("GAME_MANAGER").GetComponent<GameManager>();
         gameManager.updateMarbleArray();
 
-        TargetSpotCollider = GameObject.Find("TargetSpot").GetComponent<SphereCollider>();
+        TargetSpotCollider = GameObject.Find("TargetSpot" + marbleType).GetComponent<SphereCollider>();
 
         int checkpointLength = gameManager.currentLevelCheckpoints.Length;
         CheckPointColliders = new BoxCollider[checkpointLength];
@@ -32,8 +33,10 @@ public class MarbleScript : MonoBehaviour
     }
 
 
-    void Update()
+    public void setMarbleType(int type)
     {
+        marbleType = type;
+        gameObject.GetComponent<MeshRenderer>().material = materials[type];
 
     }
 
@@ -57,7 +60,7 @@ public class MarbleScript : MonoBehaviour
 
         if (other == TargetSpotCollider)
         {
-            CheckForWin();
+            CheckForWin(other);
             return;
         }
 
@@ -67,10 +70,12 @@ public class MarbleScript : MonoBehaviour
         }
     }
 
-    void CheckForWin()
+    void CheckForWin(Collider other)
     {
+
         if (CurrentState == MarbleState.Checkpoint3)
         {
+            other.enabled = false;
             spawnConfettis();
             gameManager.WinLevel();
         }

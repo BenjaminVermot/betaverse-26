@@ -73,7 +73,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 7795400279777039334}
+  _pointableElement: {fileID: 0}
   _rigidbody: {fileID: 3927408205670058703}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -112,7 +112,7 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 7795400279777039334}
+  _pointableElement: {fileID: 0}
   _rigidbody: {fileID: 3927408205670058703}
   _grabSource: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
@@ -194,12 +194,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 192135258444238866}
-  - component: {fileID: 3608329024114765830}
+  - component: {fileID: 7094808452209458262}
   - component: {fileID: 7324175681586809692}
   - component: {fileID: 383906135126245300}
   - component: {fileID: 5456602727348817605}
   - component: {fileID: 3927408205670058703}
-  - component: {fileID: 7795400279777039334}
+  - component: {fileID: 5401343234619386720}
   - component: {fileID: 711464313170167467}
   - component: {fileID: 8452438525416160569}
   m_Layer: 0
@@ -226,7 +226,7 @@ Transform:
   - {fileID: 3972346376426907290}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 90, z: 90}
---- !u!114 &3608329024114765830
+--- !u!114 &7094808452209458262
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: 7358e191-33b7-43ca-b066-b2f00531ac66
-  instanceId: fb3cf7de-5808-4d87-baeb-1b2275ef4ec9
+  instanceId: 1795c42c-92a0-47c5-84df-be6586b9f0a7
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -350,7 +350,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7795400279777039334
+--- !u!114 &5401343234619386720
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -367,7 +367,7 @@ MonoBehaviour:
   _forwardElement: {fileID: 0}
   _oneGrabTransformer: {fileID: 0}
   _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 192135258444238866}
+  _targetTransform: {fileID: 0}
   _maxGrabPoints: -1
   _rigidbody: {fileID: 3927408205670058703}
   _kinematicWhileSelected: 1
