@@ -79,7 +79,7 @@ public class GameManager : MonoBehaviour
     IEnumerator updateArrays()
     {
         // On attend un peu que les objets soient bien instanciés par les spawners
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.4f);
 
         currentLevelBlocks = GameObject.FindGameObjectsWithTag("Block");
         currentLevelMarbles = GameObject.FindGameObjectsWithTag("Marble");

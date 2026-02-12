@@ -48,6 +48,19 @@ public class MarbleSound : MonoBehaviour
                 oneShotAudioSource.PlayOneShot(xyloSounds[randomIndex2]);
             }
         }
+
+        //HIT MARBLE
+        if (collision.gameObject.GetComponent<MarbleSound>() != null)
+        {
+            if (currentVelocity > 1.2f)
+            {
+                int randomIndex = Random.Range(0, billeImpactSounds.Length);
+                oneShotAudioSource.pitch = 1;
+                oneShotAudioSource.pitch += Random.Range(-0.1f, 0.1f);
+                oneShotAudioSource.PlayOneShot(billeImpactSounds[randomIndex]);
+            }
+
+        }
     }
 
     void OnCollisionStay(Collision other)
@@ -65,18 +78,7 @@ public class MarbleSound : MonoBehaviour
 
         }
 
-        //HIT MARBLE
-        if (other.gameObject.CompareTag("Marble"))
-        {
-            if (currentVelocity > 2.6f)
-            {
-                int randomIndex = Random.Range(0, billeImpactSounds.Length);
-                oneShotAudioSource.pitch = 1;
-                oneShotAudioSource.pitch += Random.Range(-0.1f, 0.1f);
-                oneShotAudioSource.PlayOneShot(billeImpactSounds[randomIndex]);
-            }
 
-        }
     }
 
     void OnCollisionExit(Collision other)

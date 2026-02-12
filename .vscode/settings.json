@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "00_GAME.slnx"
+    "dotnet.defaultSolution": "betaverse-26.slnx"
 }
