@@ -27,7 +27,7 @@ public class MarbleSound : MonoBehaviour
 
         if (currentVelocity < 0.1f)
         {
-            rollingAudioSource.volume = 0f;
+            rollingAudioSource.volume = 0.5f;
         }
     }
 
@@ -39,7 +39,7 @@ public class MarbleSound : MonoBehaviour
             {
                 int randomIndex = Random.Range(0, woodImpactSounds.Length);
                 oneShotAudioSource.pitch = 1;
-                oneShotAudioSource.pitch += currentVelocity / 10f;
+                oneShotAudioSource.pitch += currentVelocity / 5f;
                 oneShotAudioSource.volume = 0f;
                 oneShotAudioSource.volume += currentVelocity / 3f;
                 oneShotAudioSource.PlayOneShot(woodImpactSounds[randomIndex]);
@@ -70,15 +70,17 @@ public class MarbleSound : MonoBehaviour
         {
             if (currentVelocity > 0.4f)
             {
-                rollingAudioSource.pitch = 1;
+                rollingAudioSource.pitch = 2f;
                 rollingAudioSource.pitch += currentVelocity / 3f;
-                rollingAudioSource.volume = 0f;
+                rollingAudioSource.volume = 1f;
                 rollingAudioSource.volume += currentVelocity / 3f;
+                
+                if (!rollingAudioSource.isPlaying)
+                {
+                    rollingAudioSource.Play();
+                }
             }
-
         }
-
-
     }
 
     void OnCollisionExit(Collision other)
