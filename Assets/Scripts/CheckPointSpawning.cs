@@ -12,6 +12,7 @@ public class CheckPointSpawning : MonoBehaviour
         checkPointAudioSource = GetComponent<AudioSource>();
         // 1. Utilisation de Random.Range
         float newPosition = Random.Range(0f, 1f);
+        float newRotation = Random.Range(0f, 180f);
 
 
 
@@ -21,6 +22,7 @@ public class CheckPointSpawning : MonoBehaviour
 
             // 2. Ajout de "new" devant Vector3
             child.transform.localPosition = new Vector3(0, newPosition, 0);
+            child.transform.localRotation = Quaternion.Euler(new Vector3(newRotation, newRotation, 0));
         }
     }
 
