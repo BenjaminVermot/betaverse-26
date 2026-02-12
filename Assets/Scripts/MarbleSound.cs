@@ -1,4 +1,3 @@
-using System.Runtime.CompilerServices;
 using UnityEngine;
 
 public class MarbleSound : MonoBehaviour
@@ -7,8 +6,6 @@ public class MarbleSound : MonoBehaviour
     public AudioClip[] xyloSounds;
 
     public AudioClip[] billeImpactSounds;
-
-    public AudioClip winSound;
     public AudioSource oneShotAudioSource;
     public AudioSource rollingAudioSource;
 
@@ -41,10 +38,10 @@ public class MarbleSound : MonoBehaviour
             if (currentVelocity > 1.2f)
             {
                 int randomIndex = Random.Range(0, woodImpactSounds.Length);
-                oneShotAudioSource.pitch = 0.5f;
-                oneShotAudioSource.pitch += currentVelocity / 12f;
-                oneShotAudioSource.volume = 0.3f;
-                oneShotAudioSource.volume += currentVelocity / 5f;
+                oneShotAudioSource.pitch = 1;
+                oneShotAudioSource.pitch += currentVelocity / 5f;
+                oneShotAudioSource.volume = 0f;
+                oneShotAudioSource.volume += currentVelocity / 3f;
                 oneShotAudioSource.PlayOneShot(woodImpactSounds[randomIndex]);
 
                 int randomIndex2 = Random.Range(0, xyloSounds.Length);
@@ -74,18 +71,14 @@ public class MarbleSound : MonoBehaviour
             if (currentVelocity > 0.4f)
             {
                 rollingAudioSource.pitch = 1f;
-                rollingAudioSource.pitch += currentVelocity / 6f;
-                rollingAudioSource.volume = 0.5f;
-                rollingAudioSource.volume += currentVelocity / 10f;
-
+                rollingAudioSource.pitch += currentVelocity / 3f;
+                rollingAudioSource.volume = 1f;
+                rollingAudioSource.volume += currentVelocity / 3f;
+                
                 if (!rollingAudioSource.isPlaying)
                 {
                     rollingAudioSource.Play();
                 }
-            }
-            else
-            {
-                rollingAudioSource.volume = 0f;
             }
         }
     }
@@ -97,10 +90,4 @@ public class MarbleSound : MonoBehaviour
             rollingAudioSource.volume = 0f;
         }
     }
-
-    public void PlaySound(AudioClip clip)
-    {
-        oneShotAudioSource.PlayOneShot(clip);
-    }
-
 }
