@@ -3,13 +3,27 @@ using System.Collections;
 
 public class TrashCan : MonoBehaviour
 {
+    private AudioSource audioSource;
+
+    private void Start()    
+        {
+            audioSource = GetComponent<AudioSource>();
+        }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Block"))
         {
             StartCoroutine(ShrinkAndDestroy(other.transform.root.gameObject));
+            if (audioSource != null)
+            {
+                audioSource.Play();
+            }
         }
     }
+
+    
+
 
     private IEnumerator ShrinkAndDestroy(GameObject obj)
     {
@@ -29,4 +43,6 @@ public class TrashCan : MonoBehaviour
         obj.transform.localScale = Vector3.zero;
         Destroy(obj);
     }
+
+    
 }

@@ -157,7 +157,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MarbleScript
   gameManager: {fileID: 0}
+  TargetSpotCollider: {fileID: 0}
+  CheckPointColliders: []
   confettis: {fileID: 8337846784714314970, guid: e4051ed21d24240dba6a7afed73dad1b, type: 3}
+  marbleType: 0
   materials:
   - {fileID: 2100000, guid: 68ae108bf4b753f4a9be9b4f949baaba, type: 2}
   - {fileID: 2100000, guid: f364ded35b4404a0d8cc5dc63ae1fdfc, type: 2}
@@ -298,9 +301,9 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 972bca961ce054646829da28220c4a21, type: 3}
+  m_Resource: {fileID: 8300000, guid: 3037184dd97b5400e912c375b88ada60, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
