@@ -46,6 +46,13 @@ public class MarbleScript : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Ground"))
+        {
+            Instantiate(debris, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+            return;
+        }
+
         if (other == CheckPointColliders[0] && CurrentState == MarbleState.Checkpoint1)
         {
             CurrentState = MarbleState.Checkpoint2;
@@ -68,11 +75,7 @@ public class MarbleScript : MonoBehaviour
             return;
         }
 
-        if (other.CompareTag("Ground"))
-        {
-            Instantiate(debris, transform.position, Quaternion.identity);
-            Destroy(gameObject);
-        }
+
     }
 
     void CheckForWin(Collider other)

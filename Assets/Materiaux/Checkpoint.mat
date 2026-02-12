@@ -60,8 +60,8 @@ Material:
     - _RadialScale: -0.38
     - _XRMotionVectorsPass: 1
     m_Colors:
-    - _BorderColor: {r: 1, g: 1, b: 1, a: 1}
-    - _DetailsColor: {r: 0.8962264, g: 0.8962264, b: 0.8962264, a: 1}
+    - _BorderColor: {r: 0.15566039, g: 0.3395774, b: 1, a: 0}
+    - _DetailsColor: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 1}
     - _DisrtotionSpeed: {r: 0.05, g: 0, b: 0, a: 0}
     - _FillColor: {r: 1, g: 1, b: 1, a: 1}
     - _NumberColor: {r: 1, g: 1, b: 1, a: 1}

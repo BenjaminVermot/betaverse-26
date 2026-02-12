@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Diagnostics;
-using System.Reflection;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -12,12 +10,12 @@ public class GameManager : MonoBehaviour
     public GameObject[] currentLevelCheckpoints;
     public GameObject[] currentLevelDispensers;
 
-
     public GameObject checkPointSpawnerPrefab;
     public GameObject dispenserSpawnerPrefab;
     public GameObject arriveeSpawnerPrefab;
 
     public Material[] checkpointMaterials; // Array pour stocker les matériaux des checkpoints
+    [SerializeField] private Color[] couleurCheckpoints;
 
 
     void Start()
@@ -98,6 +96,8 @@ public class GameManager : MonoBehaviour
     {
         for (int i = 0; i < currentLevelCheckpoints.Length; i++)
         {
+
+
             // 1. On cherche l'enfant
             Transform colliderTransform = currentLevelCheckpoints[i].transform.Find("Anneau/Plane/CheckPointCollider");
             UnityEngine.Debug.Log("Collider trouvé : " + colliderTransform);
@@ -121,6 +121,13 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
+
+        for (int i = 0; i < checkpointMaterials.Length; i++)
+        {
+            checkpointMaterials[i].SetColor("_BorderColor", couleurCheckpoints[currentLevel]);
+        }
+
+
     }
 
     public void WinLevel()
