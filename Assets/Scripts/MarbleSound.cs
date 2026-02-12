@@ -70,7 +70,7 @@ public class MarbleSound : MonoBehaviour
         {
             if (currentVelocity > 0.4f)
             {
-                rollingAudioSource.pitch = 2f;
+                rollingAudioSource.pitch = 1f;
                 rollingAudioSource.pitch += currentVelocity / 3f;
                 rollingAudioSource.volume = 1f;
                 rollingAudioSource.volume += currentVelocity / 3f;

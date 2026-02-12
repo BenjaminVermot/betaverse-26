@@ -22,8 +22,6 @@ public class TrashCan : MonoBehaviour
         }
     }
 
-    
-
 
     private IEnumerator ShrinkAndDestroy(GameObject obj)
     {
