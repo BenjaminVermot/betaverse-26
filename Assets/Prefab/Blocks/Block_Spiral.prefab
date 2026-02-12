@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 859811727551697985}
   - component: {fileID: 2345410646109373917}
   - component: {fileID: 2559578759955134079}
+  - component: {fileID: 6878889623388284022}
   m_Layer: 0
   m_Name: Block_Spiral
   m_TagString: Block
@@ -51,7 +52,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: 7358e191-33b7-43ca-b066-b2f00531ac66
-  instanceId: 462ca80f-1bb4-4854-a562-b803e9a91027
+  instanceId: c1e3b8f7-1ef9-4026-ae4e-a7469d33c06f
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -185,6 +186,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4166325481729955419, guid: 97442453fc0b83e41bb2db9b1708f3fc, type: 3}
+--- !u!114 &6878889623388284022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5864240721418652710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e54daae747ff4070863d5c48f7e00ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Wood
 --- !u!1 &7862802450993877880
 GameObject:
   m_ObjectHideFlags: 0
@@ -232,7 +245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: f8766c17-aaf8-4b55-9431-de8deea83842
-  instanceId: 4ab5bb53-dedb-443a-8d9f-ad04cc52f506
+  instanceId: ca5785f5-1ea0-4762-b771-2410a5588a7e
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: f8338144-8280-4ff6-9455-ae2bb9c20fe8

@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 2593573861877752795}
   - component: {fileID: 4745494611423283996}
   - component: {fileID: 543567071650066574}
+  - component: {fileID: 6295944792519684076}
   m_Layer: 0
   m_Name: Block_Arc
   m_TagString: Block
@@ -303,3 +304,15 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -3685427124141606190, guid: 12a017ba2c8270a4185dfe266d19961f, type: 3}
+--- !u!114 &6295944792519684076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5920780609974622400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e54daae747ff4070863d5c48f7e00ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Wood

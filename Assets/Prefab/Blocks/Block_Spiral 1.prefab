@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 859811727551697985}
   - component: {fileID: 2345410646109373917}
   - component: {fileID: 2559578759955134079}
+  - component: {fileID: 480294066827918448}
   m_Layer: 0
   m_Name: Block_Spiral 1
   m_TagString: Block
@@ -185,6 +186,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 7639248554077822418, guid: cd2cbc6d7694d46e49004295abad235e, type: 3}
+--- !u!114 &480294066827918448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5864240721418652710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e54daae747ff4070863d5c48f7e00ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Wood
 --- !u!1 &7862802450993877880
 GameObject:
   m_ObjectHideFlags: 0

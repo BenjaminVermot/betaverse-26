@@ -4,10 +4,16 @@ public class CheckPointSpawning : MonoBehaviour
 {
     private GameObject child;
 
+    private AudioSource checkPointAudioSource;
+    public AudioClip sound;
+
     void Start()
     {
+        checkPointAudioSource = GetComponent<AudioSource>();
         // 1. Utilisation de Random.Range
         float newPosition = Random.Range(0f, 1f);
+
+
 
         if (transform.childCount > 0)
         {
@@ -15,6 +21,14 @@ public class CheckPointSpawning : MonoBehaviour
 
             // 2. Ajout de "new" devant Vector3
             child.transform.localPosition = new Vector3(0, newPosition, 0);
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Marble"))
+        {
+            checkPointAudioSource.PlayOneShot(sound);
         }
     }
 }

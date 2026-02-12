@@ -11,9 +11,12 @@ public class MarbleScript : MonoBehaviour
     private BoxCollider[] CheckPointColliders;
 
     public ParticleSystem confettis;
+
+    public Material[] materials;
     public MarbleState CurrentState { get; private set; }
     void Start()
     {
+        gameObject.GetComponent<MeshRenderer>().material = materials[Random.Range(0, materials.Length)];
         gameManager = GameObject.Find("GAME_MANAGER").GetComponent<GameManager>();
         gameManager.updateMarbleArray();
 
