@@ -35,11 +35,11 @@ public class MarbleSound : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<Wood>() != null)
         {
-            if (currentVelocity > 3f)
+            if (currentVelocity > 1.2f)
             {
                 int randomIndex = Random.Range(0, woodImpactSounds.Length);
                 oneShotAudioSource.pitch = 1;
-                oneShotAudioSource.pitch += currentVelocity / 3f;
+                oneShotAudioSource.pitch += currentVelocity / 10f;
                 oneShotAudioSource.volume = 0f;
                 oneShotAudioSource.volume += currentVelocity / 3f;
                 oneShotAudioSource.PlayOneShot(woodImpactSounds[randomIndex]);

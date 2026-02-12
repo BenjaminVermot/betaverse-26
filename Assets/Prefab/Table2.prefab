@@ -112,7 +112,7 @@ PrefabInstance:
     - target: {fileID: 7279307970035464608, guid: 9bd43b8edfe71401ab760415dcbfd389, type: 3}
       propertyPath: spawnPrefab
       value: 
-      objectReference: {fileID: 4783535628933246746, guid: 1bf799a670145ea4084aa975dd448e89, type: 3}
+      objectReference: {fileID: 5864240721418652710, guid: 8c520f9e848f6154c9d229252addd8dc, type: 3}
     - target: {fileID: 7279307970035464608, guid: 9bd43b8edfe71401ab760415dcbfd389, type: 3}
       propertyPath: spawnScale.x
       value: 4
