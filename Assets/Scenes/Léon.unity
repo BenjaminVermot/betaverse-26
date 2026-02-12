@@ -187,7 +187,7 @@ PrefabInstance:
     - target: {fileID: 38063394997564026, guid: 26f7f922d8d1c4d14b885cff9e017cea, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 78a7d049833534e9ea690a5750d9ca5c, type: 2}
+      objectReference: {fileID: 2100000, guid: f6faf6fb1f3de463b9ed4585637cb407, type: 2}
     - target: {fileID: 5123827191754283067, guid: 26f7f922d8d1c4d14b885cff9e017cea, type: 3}
       propertyPath: m_LocalScale.x
       value: 23.344
@@ -309,6 +309,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
+    - target: {fileID: 3547835589992666804, guid: 67a47d27958ce4e919f3dbe177ac6f79, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: f6faf6fb1f3de463b9ed4585637cb407, type: 2}
     - target: {fileID: 5864240721418652710, guid: 67a47d27958ce4e919f3dbe177ac6f79, type: 3}
       propertyPath: m_Name
       value: Block_Spiral

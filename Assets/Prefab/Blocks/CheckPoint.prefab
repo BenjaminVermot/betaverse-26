@@ -351,7 +351,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 9e8e433951f0e4571b09b2fa0a22d916, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 9eb2c1eb09a5b1c4abefaab548655d94, type: 2}
+      objectReference: {fileID: 2100000, guid: f6faf6fb1f3de463b9ed4585637cb407, type: 2}
     - target: {fileID: 919132149155446097, guid: 9e8e433951f0e4571b09b2fa0a22d916, type: 3}
       propertyPath: m_Name
       value: Anneau

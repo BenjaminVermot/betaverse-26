@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: 3f1827c2-c682-46d8-999e-0954e37e833e
-  instanceId: 5cb43c56-27ce-4818-8fdb-1db67e3df188
+  instanceId: 4642617d-7bbf-4caa-8795-b3d01d2cbd6a
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 20b9ad69-c205-488d-a6b2-d3d7ca6c1e53
@@ -217,15 +217,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4783535628933246746}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: -0.7071068}
-  m_LocalPosition: {x: -0.52885, y: 3.3299, z: 2.1185}
+  m_LocalRotation: {x: 0, y: 0.70710677, z: 0.70710677, w: 0}
+  m_LocalPosition: {x: -0.5290517, y: 3.326688, z: 2.1185}
   m_LocalScale: {x: 5.5774255, y: 5.5774264, z: 5.5774264}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4666961078564007772}
   - {fileID: 3972346376426907290}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -270, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 90, z: 90}
 --- !u!114 &3608329024114765830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,7 +239,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Meta.XR.BuildingBlocks::Meta.XR.BuildingBlocks.BuildingBlock
   blockId: 7358e191-33b7-43ca-b066-b2f00531ac66
-  instanceId: 2430226d-e242-4dd2-814c-a96680e702ca
+  instanceId: fb3cf7de-5808-4d87-baeb-1b2275ef4ec9
   version: 1
   installationRoutineCheckpoint:
     _installationRoutineId: 
@@ -277,7 +277,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9eb2c1eb09a5b1c4abefaab548655d94, type: 2}
+  - {fileID: 2100000, guid: f6faf6fb1f3de463b9ed4585637cb407, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

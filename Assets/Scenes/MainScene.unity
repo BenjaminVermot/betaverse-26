@@ -719,7 +719,7 @@ MonoBehaviour:
   arriveeSpawnerPrefab: {fileID: 1396070851689360348, guid: 7a8c47d16a1638742b5275823a608dea, type: 3}
   checkpointMaterials:
   - {fileID: 2100000, guid: 93504f75894c8e64d87ac3be4db426c4, type: 2}
-  - {fileID: 2100000, guid: 86fc5039514c1490da36fbcedf701649, type: 2}
+  - {fileID: 2100000, guid: 7b79e5c2f7ce34d0eb7aa9093a91ac2c, type: 2}
 --- !u!4 &561145648
 Transform:
   m_ObjectHideFlags: 0
@@ -745,6 +745,7 @@ GameObject:
   m_Component:
   - component: {fileID: 669049588}
   - component: {fileID: 669049585}
+  - component: {fileID: 669049589}
   m_Layer: 0
   m_Name: GROUND
   m_TagString: Ground
@@ -789,6 +790,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &669049589
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 669049584}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 5.6501255, y: 0.018246163, z: 6.934215}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &766505773
 GameObject:
   m_ObjectHideFlags: 0
