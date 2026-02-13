@@ -11,7 +11,7 @@ public class MarbleScript : MonoBehaviour
     public BoxCollider[] CheckPointColliders;
 
     public ParticleSystem confettis;
-    public ParticleSystem debris;
+    public ParticleSystem[] debris;
 
     public int marbleType = 0;
 
@@ -48,7 +48,7 @@ public class MarbleScript : MonoBehaviour
     {
         if (other.CompareTag("Ground"))
         {
-            Instantiate(debris, transform.position, Quaternion.identity);
+            Instantiate(debris[gameManager.currentLevel], transform.position, Quaternion.identity);
             Destroy(gameObject);
             return;
         }
