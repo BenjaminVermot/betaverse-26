@@ -6,6 +6,7 @@ public class MarbleSound : MonoBehaviour
     public AudioClip[] xyloSounds;
 
     public AudioClip[] billeImpactSounds;
+    public AudioClip[] groundImpactSounds;
     public AudioClip winSound;
     public AudioSource oneShotAudioSource;
     public AudioSource rollingAudioSource;
@@ -47,6 +48,18 @@ public class MarbleSound : MonoBehaviour
 
                 int randomIndex2 = Random.Range(0, xyloSounds.Length);
                 oneShotAudioSource.PlayOneShot(xyloSounds[randomIndex2]);
+            }
+        }
+
+        //HIT GROUND
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            if (currentVelocity > 1.2f)
+            {
+                int randomIndex = Random.Range(0, groundImpactSounds.Length);
+                oneShotAudioSource.pitch = 1;
+                oneShotAudioSource.pitch += Random.Range(-0.1f, 0.1f);
+                oneShotAudioSource.PlayOneShot(groundImpactSounds[randomIndex]);
             }
         }
 
@@ -97,6 +110,8 @@ public class MarbleSound : MonoBehaviour
             rollingAudioSource.volume = 0f;
         }
     }
+
+    
 
     public void PlaySound(AudioClip clip)
     {

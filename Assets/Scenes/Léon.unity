@@ -672,7 +672,7 @@ GameObject:
   - component: {fileID: 801587768}
   m_Layer: 0
   m_Name: Plane
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1552,6 +1552,22 @@ PrefabInstance:
       propertyPath: m_Resource
       value: 
       objectReference: {fileID: 8300000, guid: 3037184dd97b5400e912c375b88ada60, type: 3}
+    - target: {fileID: 6953798387947419382, guid: 5a19754e08f6cb14e9912ad7209b5007, type: 3}
+      propertyPath: groundImpactSounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6953798387947419382, guid: 5a19754e08f6cb14e9912ad7209b5007, type: 3}
+      propertyPath: 'groundImpactSounds.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 0d86d94b395c6413fae45449e66cab5c, type: 3}
+    - target: {fileID: 6953798387947419382, guid: 5a19754e08f6cb14e9912ad7209b5007, type: 3}
+      propertyPath: 'groundImpactSounds.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: cd15bcc4d0a17442aa789f192847a245, type: 3}
+    - target: {fileID: 6953798387947419382, guid: 5a19754e08f6cb14e9912ad7209b5007, type: 3}
+      propertyPath: 'groundImpactSounds.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 07dce802bbcb54f99a5206a3b042ebe3, type: 3}
     - target: {fileID: 7773637831676176112, guid: 5a19754e08f6cb14e9912ad7209b5007, type: 3}
       propertyPath: m_Volume
       value: 0.39
@@ -1656,7 +1672,7 @@ GameObject:
   - component: {fileID: 1895645044}
   m_Layer: 0
   m_Name: Plane (1)
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1676,11 +1692,11 @@ MeshCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1895645045
