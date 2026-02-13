@@ -55,12 +55,8 @@ public class GameManager : MonoBehaviour
                 if (checkpoint != null) Destroy(checkpoint);
             }
         }
-
         // On vide les tableaux APRES la boucle
         currentLevelCheckpoints = new GameObject[0];
-        currentLevelBlocks = new GameObject[0];
-        currentLevelMarbles = new GameObject[0];
-        currentLevelDispensers = new GameObject[0];
     }
 
     void spawnNextLevel()
@@ -78,12 +74,7 @@ public class GameManager : MonoBehaviour
     {
         // On attend un peu que les objets soient bien instanciés par les spawners
         yield return new WaitForSeconds(0.4f);
-
-        currentLevelBlocks = GameObject.FindGameObjectsWithTag("Block");
-        currentLevelMarbles = GameObject.FindGameObjectsWithTag("Marble");
         currentLevelCheckpoints = GameObject.FindGameObjectsWithTag("Checkpoint");
-        currentLevelDispensers = GameObject.FindGameObjectsWithTag("Dispenser");
-
         setCheckpointsOrder();
     }
 
